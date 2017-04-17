@@ -1,0 +1,14 @@
+{
+    "name": "adagio/brick",
+    "authors": [
+        {
+            "name": "Keven",
+            "email": "keven@adagiolabs.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Adagio\\Brick\\": "src"
+        }
+    }
+}
