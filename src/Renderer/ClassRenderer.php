@@ -5,7 +5,7 @@ namespace Adagio\Brick\Renderer;
 use Adagio\Brick\PhpClass;
 use Adagio\Brick\Traits\CanIndent;
 
-final class CLassRenderer
+final class ClassRenderer
 {
     use CanIndent;
 
