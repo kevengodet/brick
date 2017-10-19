@@ -215,6 +215,13 @@ final class PhpClass implements Namable
         return $this;
     }
 
+    public function addMethods(PhpMethod ...$methods): PhpClass
+    {
+        array_walk($methods, [$this, 'addMethod']);
+
+        return $this;
+    }
+
     /**
      *
      * @param string $name
