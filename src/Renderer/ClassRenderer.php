@@ -70,6 +70,10 @@ final class ClassRenderer
             $lines[] = self::BLANK_LINE;
         }
 
+        if (end($lines) === self::BLANK_LINE) {
+            array_pop($lines);
+        }
+
         $lines[] = '}';
 
         // Generate code string
@@ -90,6 +94,6 @@ final class ClassRenderer
             $classCode .= $line."\n";
         }
 
-        return $classCode."\n";
+        return $classCode;
     }
 }
